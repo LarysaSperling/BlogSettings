@@ -1,0 +1,19 @@
+.article {
+  width: min(920px, 92vw);
+  padding: 28px 34px;
+
+  background: rgba(121, 171, 129, 0.55);
+  border: 2px solid rgba(79, 130, 92, 0.55);
+  border-radius: 10px;
+
+  color: rgba(16, 48, 26, 0.95);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.10);
+}
+
+.article p {
+  margin: 0 0 18px;
+}
+
+.article p:last-child {
+  margin-bottom: 0;
+}

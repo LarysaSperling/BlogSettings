@@ -1,11 +1,20 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+/* eslint-disable react-refresh/only-export-components */
+import React, {
+  createContext,
+  useContext,
+  useMemo,
+  useState,
+} from "react";
 
-const BlogSettingsContext = createContext(null);
+export const BlogSettingsContext = createContext(null);
 
 export function BlogSettingsProvider({ children }) {
-  const [fontSize, setFontSize] = useState(18);     
-  const [lineHeight, setLineHeight] = useState(1.5); 
+  
+  const [fontSize, setFontSize] = useState(18);
 
+  const [lineHeight, setLineHeight] = useState(1.5);
+
+ 
   const value = useMemo(
     () => ({
       fontSize,
@@ -25,8 +34,14 @@ export function BlogSettingsProvider({ children }) {
 
 export function useBlogSettings() {
   const ctx = useContext(BlogSettingsContext);
+
   if (!ctx) {
-    throw new Error("useBlogSettings must be used inside BlogSettingsProvider");
+    throw new Error(
+      "useBlogSettings must be used inside BlogSettingsProvider"
+    );
   }
+
   return ctx;
 }
+
+
