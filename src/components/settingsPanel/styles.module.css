@@ -1,0 +1,45 @@
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  padding: 22px 26px;
+  border-radius: 10px;
+
+  background: rgba(121, 171, 129, 0.35);
+  border: 2px solid rgba(79, 130, 92, 0.55);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(2px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(22, 66, 35, 0.9);
+}
+
+.control {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+  font-weight: 600;
+  color: rgba(22, 66, 35, 0.85);
+}
+
+.select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(36, 92, 52, 0.45);
+  background: rgba(255, 255, 255, 0.85);
+  color: rgba(18, 52, 28, 0.95);
+  outline: none;
+}
+
+.select:focus {
+  border-color: rgba(36, 92, 52, 0.75);
+  box-shadow: 0 0 0 3px rgba(36, 92, 52, 0.18);
+}
